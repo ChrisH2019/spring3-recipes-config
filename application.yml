@@ -1,6 +1,10 @@
 server:
   port: 0
 management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,metrics,beans,loggers,prometheus
   tracing:
     sampling:
       probability: 1.0
